@@ -2,41 +2,62 @@
 <html>
 <head>
   <title>Layout Master</title>
-  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" type="text/css" href="./test.css">
 </head>
 <body>
   <nav class="zone blue sticky">
     <ul class="main-nav">
-      <li><a href="1.LaLiga.html">LaLiga</a></li>
-      <li><a href="">Premier League</a></li>
-      <li><a href="">Serie A</a></li>
-      <li><a href="">Bundesliga</a></li>
-      <li><a href="">Ligue 1</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="">Price's</a></li>
       <li class="push"><a href="">Contacts</a></li>
     </ul>
   </nav>
-  <div class="zone container"><img class="cover" src="img/KitManFC.png" alt=""></div>
-  <div class="zone blue grid-wrapper">
-
-    <a href="1.LaLiga.html"><div class="box zone"><img src="img/LaLiga.png" alt=""></div></a>
-    <a href="2.PremierLeague.html"><div class="box zone"><img src="img/PremierLeague.png" alt=""></div></a>
-
-    <a href="2.PremierLeague.html"><div class="box zone"><img src="img/SerieA.png" alt=""></div></a>
-    <div class="box zone"><img src="img/Bundesliga.png" alt=""></div>
-    <div class="box zone"><img src="img/ligue-1-logo.png" alt=""></div>
-    <div class="box zone"><img src="img/LigaMX.png" alt=""></div>
-    <div class="box zone"><img src="img/eredivisie.jpg" alt=""></div>
-    <div class="box zone"><img src="img/LigaPortugal.png" alt=""></div>
-    <div class="box zone"><img src="img/MLS.png" alt=""></div>
-    <div class="box zone"><img src="img/CampeonatoBrasileiroSérieA.png" alt=""></div>
-    <div class="box zone"><img src="img/J._League_logo.png" alt=""></div>
-    <div class="box zone"><img src="img/UEFA_Euro_2024_Logo.png" alt=""></div>
-    <div class="box zone"><img src="img/Concacaf.png" alt=""></div>
-    <div class="box zone"><img src="img/conmebol.jpg" alt=""></div>
-    <div class="box zone"><img src="img/Internantional.png" alt=""></div>
-    <div class="box zone"><img src="img/KingsLeague.png" alt=""></div>
+  <div class="zone container"><img class="cover" src="img/LaLiga.png" alt=""></div>
+  <!-- Fan Version -->
+  <div class="gray grid-wrapper">
+    
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
+      <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+      <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+    </div>
+    
+    <div id="London" class="tabcontent">
+      <h3>London</h3>
+      <p>London is the capital city of England.</p>
+    </div>
+    
+    <div id="Paris" class="tabcontent">
+      <h3>Paris</h3>
+      <p>Paris is the capital of France.</p> 
+    </div>
+    
+    <div id="Tokyo" class="tabcontent">
+      <h3>Tokyo</h3>
+      <p>Tokyo is the capital of Japan.</p>
+    </div>
   </div>
+
+  
  
   <footer class="zone yellow">Footer</footer>
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
 </body>
 </html>
