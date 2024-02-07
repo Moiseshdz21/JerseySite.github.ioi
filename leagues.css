@@ -11,7 +11,7 @@ body{
     color:#FFF;
     font-size:2em;
     border-radius:4px;
-    border:1px solid #bbb;
+    border:1px;
     transition: all 0.3s linear;
 }
 
@@ -106,6 +106,7 @@ a{
 
 footer{
     text-align: center;
+    background-color: #2b2d31;
 }
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
 /***********************************************************************

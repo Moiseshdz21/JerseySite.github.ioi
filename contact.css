@@ -48,7 +48,9 @@ body{
     padding: 0;
     }
 }
-
+h1 {
+    background-color: #535353;
+}
 .push{
     margin-left: auto;
 }
@@ -80,6 +82,8 @@ a{
 /* Grid */
 .grid-wrapper{
     display: grid;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Layout Master</title>
+  <link rel="stylesheet" type="text/css" href="./contact.css">
+  <style>
+    body {font-family: Arial;}
+    
+    /* Style the tab */
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+    }
+    
+    /* Style the buttons inside the tab */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 70px;
+      display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #ddd;
+    }
+    
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: #ccc;
+    }
+    
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+      background-color: #535353;
+    }
+    </style>
+</head>
+<body>
+  <nav class="zone blue sticky">
+    <ul class="main-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="">Price's</a></li>
+      <li class="push"><a href="">Contacts</a></li>
+    </ul>
+  </nav>
+  <div class="zone container"><img class="cover" src="img/KitManFC.png" alt=""></div>
+
+  <div class="zone blue grid-wrapper">
+    <a href="1.0LaLiga.html"><div class="box zone"><img src="img/Instagram.png" alt=""></div></a>
+    <a href="2.PremierLeague.html"><div class="box zone"><img src="img/Mercari.png" alt=""></div></a>
+    <a href="2.PremierLeague.html"><div class="box zone"><img src="img/whatsapp.png" alt=""></div></a>
+    
+  </div>
+ 
+  <div class="">
+    
+
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'Instagram')" id="defaultOpen">Instagram</button>
+      <button class="tablinks" onclick="openCity(event, 'Mercari')">Mercari</button>
+      <button class="tablinks" onclick="openCity(event, 'Whatsapp')">Whatsapp</button>
+    </div>
+    
+    <div id="Instagram" class="tabcontent">
+      <h1 style="color: #ccc;">Select where you are ordering for details:</h1>
+      <h1>Step 1:</h1>
+      <p>Click the Instagram icon on the top to direct you to my Instagram page.</p>
+      
+      <h1>Step 2:</h1>
+      <p>Send a screenshot of the jerseys and send a text with details.</p>
+      <h4>Text detail example:</h4>
+      <p>1 Large Real Madrid 23/24 Long Sleeve Home Kit<br>
+      -Bellingham #5<br>
+      -UCL Patch</p>
+      <strong style="color: yellow; font-size: small;">*Please be as detailed as possible. We can provide UCL patches, Europa League Patches, 
+          and league patches like LaLiga and Premier League. If you have any questions about the patches please ask. </strong>
+      
+          <h1>Step 3</h1>
+        <p>Prices and delivery will be discussed. Once everything is agreed, I will make a Listing on Mercari and will send you the link. 
+          Or click on the Mercari Icon and view my listings.</p>
+        <strong style="color: yellow; font-size: small;">*Buyer will pay for shipping.</strong>
+      <p></p>
+    </div>
+    
+    <div id="Mercari" class="tabcontent">
+      <h1>Step 1:</h1>
+      <p>Click the Mercari Icon on the top to direct you to my page.</p>
+
+      <h1>Step 2:</h1>
+      <p>Send a screenshot of the jerseys and send a text with details.</p>
+      <h4>Text detail example:</h4>
+      <p>1 Large Real Madrid 23/24 Long Sleeve Home Kit<br>
+      -Bellingham #5<br>
+      -UCL Patch</p>
+      <strong style="color: yellow; font-size: small;">*Please be as detailed as possible since screenshots can not be sent on Mercari. We can provide UCL patches, Europa League Patches, 
+        and league patches like LaLiga and Premier League. If you have any questions about the patches please ask. </strong>
+
+          <h1>Step 3</h1>
+          <p>Prices and delivery will be discussed. Once everything is agreed, I will let you know when the listing is live.
+          <strong style="color: yellow; font-size: small;">*Buyer will pay for shipping.</strong>
+    </div>
+    
+    <div id="Whatsapp" class="tabcontent">
+      <p>Useful if you live in the Houston, Tx area.</p>
+      <h1>Step 1:</h1>
+      <p>Click the Whats Icon on the top to direct you to my contact page.</p>
+
+      <h1>Step 2:</h1>
+      <p>Send a screenshot of the jerseys and send a text with details.</p>
+      <h4>Text detail example:</h4>
+      <p>1 Large Real Madrid 23/24 Long Sleeve Home Kit<br>
+      -Bellingham #5<br>
+      -UCL Patch</p>
+      <strong style="color: yellow; font-size: small;">*Please be as detailed as possible. We can provide UCL patches, Europa League Patches, 
+          and league patches like LaLiga and Premier League. If you have any questions about the patches please ask. </strong>
+      
+          <h1>Step 3</h1>
+          <p>Prices and delivery will be discussed. Once everything is agreed, I will let you know when your order is ready to meet up in the Houston, Tx area.
+             Or I will send you a link of the listing.</p>
+          <strong style="color: yellow; font-size: small;">*Buyer will pay for shipping.</strong>
+    </div>
+  </div>
+  <footer class="zone"><a href="">Place an order</a></footer>
+
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+</body>
+</html>

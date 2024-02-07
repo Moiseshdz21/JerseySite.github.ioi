@@ -3,6 +3,54 @@
 <head>
   <title>Layout Master</title>
   <link rel="stylesheet" type="text/css" href="./leagues.css">
+  <style>
+    body {font-family: Arial;}
+    
+    /* Style the tab */
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      margin-right: 70px;
+      background-color: #f1f1f1;
+    }
+    
+    /* Style the buttons inside the tab */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 20px;
+    }
+    
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #ddd;
+    }
+    
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: #ccc;
+    }
+    
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #0f1418;
+      border-top: none;
+      background-color: #0f1418;
+    }
+    .teamimg {
+    float: left;
+    width:  250px;
+    height: 250px;
+    object-fit: cover;
+}
+    </style>
 </head>
 <body>
   <nav class="zone blue sticky">
@@ -13,17 +61,305 @@
     </ul>
   </nav>
   <div class="zone container"><img class="cover" src="img/LaLiga.png" alt=""></div>
-  <div class="zone gray grid-wrapper">
+  <!-- Tab Content -->
+  <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'FanVersion')" id="defaultOpen">Fan</button>
+      <button class="tablinks" onclick="openCity(event, 'PlayerVersion')">Player</button>
+      <button class="tablinks" onclick="openCity(event, 'RetroJersey')">Retro</button>
+      <button class="tablinks" onclick="openCity(event, 'Woman')">Woman</button>
+      <button class="tablinks" onclick="openCity(event, 'Kids')">Kid's</button>
+      <button class="tablinks" onclick="openCity(event, 'Other')">Other</button>
+    </div>
 
-    <div><img class="teams">Fan Version</div>
-    <div><a href="test.html"><img class="teams" src="img/LaLigaTeams/RealMadridPV.jpg" alt=""></a></div>
-    <div><a href="test.html"><img class="teams" src="img/LaLigaTeams/RealMadridLongSleeve.jpg" alt=""></a></div>
-    <div><a href="test.html"><img class="teams" src="img/LaLigaTeams/RealMadridWomen.jpg" alt=""></a></div>
-    <div><a href="test.html"><img class="teams" src="img/LaLigaTeams/RealMadridKids.jpg" alt=""></a></div>
+  <div>
+       
+    <div id="FanVersion" class="tabcontent">
+      <div class="zone gray grid-wrapper">
+        <div><a href="img/LaLigaTeams/RealMadrid/RMFan/HomeF.jpg" c><img class="teamimg" src="img/LaLigaTeams/RealMadrid/RMFan/HomeF.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/RMFan/HomeB.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/RMFan/HomeB.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/RMFan/HomeLSF.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/RMFan/HomeLSF.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/RMFan/HomeLSB.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/RMFan/HomeLSB.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/RMFan/HomeShorts.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/RMFan/HomeShorts.jpg" alt=""></a></div>
+        
+        <div><a href="img/LaLigaTeams/RealMadrid/RMFan/AwayF.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/RMFan/AwayF.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/RMFan/AwayB.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/RMFan/AwayB.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/RMFan/AwayLSF.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/RMFan/AwayLSF.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/RMFan/ThirdLSB.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/RMFan/ThirdLSB.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/RMFan/ThirdF.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/RMFan/ThirdF.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/RMFan/ThirdB.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/RMFan/ThirdB.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/RMFan/ThirdLSF.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/RMFan/ThirdLSF.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/RMFan/ThirdLSB.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/RMFan/ThirdLSB.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/RMFan/GK1.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/RMFan/GK1.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/RMFan/GK1LS.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/RMFan/GK1LS.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/RMFan/GK2.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/RMFan/GK2.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/RMFan/GK2LS.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/RMFan/GK2LS.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/RMFan/GK3.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/RMFan/GK3.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Concept/Concept1F.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Concept/Concept1F.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Concept/Concept1B.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Concept/Concept1B.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Concept/Concept2F.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Concept/Concept2F.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Concept/Concept2B.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Concept/Concept2B.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Concept/Concept4F.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Concept/Concept4F.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Concept/Concept4B.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Concept/Concept4B.jpg" alt=""></a></div>
+      </div>
+    </div>
     
+    <div id="PlayerVersion" class="tabcontent">
+      <div class="zone gray grid-wrapper">
+        <div><a href="img/LaLigaTeams/RealMadrid/RMPlayer/HomeF.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/RMPlayer/HomeF.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/RMPlayer/HomeB.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/RMPlayer/HomeB.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/RMPlayer/HomeLSF.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/RMPlayer/HomeLSF.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/RMPlayer/HomeLSB.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/RMPlayer/HomeLSB.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/RMPlayer/HomeShorts.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/RMPlayer/HomeShorts.jpg" alt=""></a></div>
+        
+        <div><a href="img/LaLigaTeams/RealMadrid/RMPlayer/AwayF.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/RMPlayer/AwayF.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/RMPlayer/AwayB.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/RMPlayer/AwayB.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/RMPlayer/AwayLSF.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/RMPlayer/AwayLSF.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/RMPlayer/AwayLSB.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/RMPlayer/AwayLSB.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/RMPlayer/AwayShorts.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/RMPlayer/AwayShorts.jpg" alt=""></a></div>
+
+
+        <div><a href="img/LaLigaTeams/RealMadrid/RMPlayer/ThirdF.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/RMPlayer/ThirdF.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/RMPlayer/ThirdB.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/RMPlayer/ThirdB.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/RMPlayer/ThirdLSF.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/RMPlayer/ThirdLSF.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/RMPlayer/ThirdLSB.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/RMPlayer/ThirdLSB.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Concept/Concept3F.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Concept/Concept3F.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Concept/Concept3B.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Concept/Concept3B.jpg" alt=""></a></div>
+
+      </div>
+    </div>
+    
+    <div id="RetroJersey" class="tabcontent">
+      <div class="zone gray grid-wrapper">
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/HomePF22.23.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/HomePF22.23.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/HomeFF22.23.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/HomeFF22.23.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/HomeLSF22.23.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/HomeLSF22.23.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/HomeShorts22.23.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/HomeShorts22.23.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Away22.23.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Away22.23.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/AwayLS22.23.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/AwayLS22.23.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/AwayShorts22.23.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/AwayShorts22.23.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/ThirdP22.23.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/ThirdP22.23.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/ThirdF22.23.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/ThirdF22.23.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/ThirdShorts22.23.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/ThirdShorts22.23.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/HomeLS21.22.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/HomeLS21.22.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Home20.21.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Home20.21.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Away20.21.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Away20.21.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Third20.21.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Third20.21.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Home19.20.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Home19.20.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Away19.20.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Away19.20.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Third19.20.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Third19.20.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Home18.19.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Home18.19.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Home17.18.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Home17.18.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/HomeLS17.18.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/HomeLS17.18.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Away17.18.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Away17.18.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/AwayLS17.18.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/AwayLS17.18.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Third17.18.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Third17.18.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/ThirdLS17.18.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/ThirdLS17.18.jpg" alt=""></a></div>
+        
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Home16.17.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Home16.17.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/HomeLS16.17.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/HomeLS16.17.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Away16.17.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Away16.17.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/AwayLS16.17.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/AwayLS16.17.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Third16.17.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Third16.17.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/ThirdLS16.17.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/ThirdLS16.17.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Home15.16.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Home15.16.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Away15.16.jpeg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Away15.16.jpeg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Home14.15.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Home14.15.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/HomeLS14.15.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/HomeLS14.15.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Away14.15.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Away14.15.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/AwayLS14.15.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/AwayLS14.15.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Third14.15.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Third14.15.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/ThirdLS14.15.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/ThirdLS14.15.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Home13.14.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Home13.14.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/HomeLS13.14.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/HomeLS13.14.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Away13.14.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Away13.14.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Third13.14.jpeg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Third13.14.jpeg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/ThirdLS13.14.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/ThirdLS13.14.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Home12.13.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Home12.13.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Third12.13.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Third12.13.jpg" alt=""></a></div>
+        
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Away11.12.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Away11.12.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/AwayLS11.12.jpeg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/AwayLS11.12.jpeg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Third11.12.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Third11.12.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/ThirdLS11.12.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/ThirdLS11.12.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/GK11.12.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/GK11.12.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Home10.11.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Home10.11.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/HomeLS10.11.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/HomeLS10.11.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Away10.11.jpeg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Away10.11.jpeg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/AwayLS10.11.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/AwayLS10.11.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Home09.10.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Home09.10.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/HomeLS09.10.jpeg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/HomeLS09.10.jpeg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Home08.09.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Home08.09.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Away08.09.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Away08.09.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Home07.08.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Home07.08.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Home06.07.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Home06.07.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/HomeLS06.07.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/HomeLS06.07.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Away06.07.jpeg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Away06.07.jpeg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/AwayLS06.07.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/AwayLS06.07.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/GK06.07.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/GK06.07.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Home05.06.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Home05.06.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/HomeLS05.06.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/HomeLS05.06.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Away04.05.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Away04.05.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/AwayLS04.05.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/AwayLS04.05.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Third04.05.jpeg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Third04.05.jpeg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Away01.02.jpeg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Away01.02.jpeg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Away99.00.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Away99.00.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Home98.99.jpeg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Home98.99.jpeg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Home97.98.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Home97.98.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Home96.97.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Home96.97.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Home94.96.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Home94.96.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/HomeLS94.96.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/HomeLS94.96.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Retro/Home86-87.jpg " target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Retro/Home86-87.jpg" alt=""></a></div>
+      </div>
+    </div>
+
+    <div id="Woman" class="tabcontent">
+      <div class="zone gray grid-wrapper">
+        <div><a href="img/LaLigaTeams/RealMadrid/Woman/Home23.24.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Woman/Home23.24.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Woman/HomeB23.24.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Woman/HomeB23.24.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Woman/Away23.24.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Woman/Away23.24.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Woman/AwayB23.24.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Woman/AwayB23.24.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Woman/Third23.24.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Woman/Third23.24.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Woman/ThirdB23.24.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Woman/ThirdB23.24.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Woman/Home22.23.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Woman/Home22.23.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Woman/HomeB22.23.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Woman/HomeB22.23.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Woman/Away22.23.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Woman/Away22.23.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Woman/AwayB22.23.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Woman/AwayB22.23.jpg" alt=""></a></div>
+      </div>  
+    </div>
+
+    <div id="Kids" class="tabcontent">
+      <div class="zone gray grid-wrapper">
+        <div><a href="img/LaLigaTeams/RealMadrid/Kids/Home23.24.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Kids/Home23.24.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Kids/HomeB23.24.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Kids/HomeB23.24.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Kids/HomeLS23.24.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Kids/HomeLS23.24.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Kids/HomeLSB23.24.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Kids/HomeLSB23.24.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Kids/GK23.24.png" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Kids/GK23.24.png" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Kids/GKB23.24.png" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Kids/GKB23.24.png" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Kids/GKAway23.24.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Kids/GKAway23.24.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Kids/GKAwayB23.24.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Kids/GKAwayB23.24.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Kids/PreMatch1.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Kids/PreMatch1.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Kids/PreMatch2.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Kids/PreMatch2.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Kids/PreMatch3.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Kids/PreMatch3.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Kids/PreMatch4.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Kids/PreMatch4.jpg" alt=""></a></div>
+
+
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Kids/Concept1F.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Kids/Concept1F.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Kids/Concept1B.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Kids/Concept1B.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Kids/Concept2F.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Kids/Concept2F.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Kids/Concept2B.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Kids/Concept2B.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Kids/Concept3F.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Kids/Concept3F.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Kids/Concept3B.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Kids/Concept3B.jpg" alt=""></a></div>
+      </div>
+    </div>
+
+    <div id="Other" class="tabcontent">
+      <div class="zone gray grid-wrapper">
+        <div><a href="img/LaLigaTeams/RealMadrid/Other/HomeSocks.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Other/HomeSocks.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Other/AwaySocks.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Other/AwaySocks.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Other/ThirdSocks.png" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Other/ThirdSocks.png" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Other/Coat1.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Other/Coat1.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Other/Coat2.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Other/Coat2.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Other/HalfHoodie1.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Other/HalfHoodie1.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Other/HalfHoodie2.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Other/HalfHoodie2.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Other/HalfHoodie3.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Other/HalfHoodie3.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Other/HalfHoodie4.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Other/HalfHoodie4.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Other/HalfZip1.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Other/HalfZip1.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Other/HalfZip2.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Other/HalfZip2.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Other/HalfZip3.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Other/HalfZip3.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Other/HalfZip4.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Other/HalfZip4.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Other/HalfZip5.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Other/HalfZip5.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Other/Polo1.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Other/Polo1.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Other/Polo2.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Other/Polo2.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Other/Polo3.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Other/Polo3.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Other/Polo4.jpeg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Other/Polo4.jpeg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Other/Polo5.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Other/Polo5.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Other/Rain6.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Other/Rain6.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Other/Rain7.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Other/Rain7.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Other/Tshirt1.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Other/Tshirt1.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Other/Tshirt2.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Other/Tshirt2.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Other/Tshirt3.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Other/Tshirt3.jpg" alt=""></a></div>
+
+        <div><a href="img/LaLigaTeams/RealMadrid/Other/ZipUp1.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Other/ZipUp1.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Other/ZipUp2.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Other/ZipUp2.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Other/ZipUp3.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Other/ZipUp3.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Other/ZipUp4.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Other/ZipUp4.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Other/ZipUp5.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Other/ZipUp5.jpg" alt=""></a></div>
+        <div><a href="img/LaLigaTeams/RealMadrid/Other/ZipUp6.jpg" target="_blank"><img class="teamimg" src="img/LaLigaTeams/RealMadrid/Other/ZipUp6.jpg" alt=""></a></div>
+      </div>
+    </div>
   </div>
+
   
  
   <footer class="zone yellow">Footer</footer>
+
+
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
 </body>
 </html>
